@@ -2,7 +2,7 @@
 # Class Design, 10/04/2018
 * What is a class?
   * An abstract data type whose variable is an object
-  * 
+  * Allows programmers to define their own data type
 * 2 components of class:
   * Interface
   * Implementation
