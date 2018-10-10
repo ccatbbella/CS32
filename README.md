@@ -1,5 +1,24 @@
 # CS32
-# Class Design, 10/04/2018
+## Week 2
+### Struct, Namespace, 10/09/2018
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Week 1
+### Class Design, 10/04/2018
 * What is a class?
   * An abstract data type whose variable is an object
   * Allows programmers to define their own data type
