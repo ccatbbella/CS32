@@ -1,7 +1,6 @@
 # CS32
-## Week 3
-Tuesday, Oct 16  
-### Hash Tables (unordered_map) and Red-Black Tree (map)  
+## Week 3 
+### Hash Tables (unordered_map) and Red-Black Tree (map)       10/16/2018/Tue
 * Hashing : assign *unique* key values from a large range to a smaller size array
 * Hash Function
     * Input:
