@@ -1,4 +1,31 @@
 # CS32
+## Week 3
+Tuesday, Oct 16  
+### Hash Tables (unordered_map) and Red-Black Tree (map)  
+* Hashing : assign *unique* key values from a large range to a smaller size array
+* Hash Function
+    * Input:
+    * Output:
+    * A good hash function will   
+* Hash Tables  
+    * Underlying structure is : 
+    * Provides efficient * * method : O()
+    * Collision:  
+    * The template data structure that uses hash table is : unordered_map
+* Three ways to solve the collision problems  
+    * Open Address Hashing : 
+        * Two problems of this method 
+            *
+            *
+    * Double Hashing :
+        * Require table size to be a * * number
+        * Problems of this method
+            * 
+    * Chain Hashing (Stdlib implementation) :  
+        * Element need for resizing table  
+* Red-Black Tree
+       
+    
 ## Week 2
 ### Struct, Namespace, 10/09/2018
 
