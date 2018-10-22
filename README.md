@@ -1,28 +1,52 @@
 # CS32
 ## Week 3 
 ### Hash Tables (unordered_map) and Red-Black Tree (map)       10/16/2018/Tue
-* Hashing : assign *unique* key values from a large range to a smaller size array
+* Hashing : when key values are large, hash them to a smaller index
 * Hash Function
-    * Input:
-    * Output:
-    * A good hash function will   
+    * Input: a unique key 
+    * Output: an index of an array
+    * A good hash function will evenly distribute inputs
 * Hash Tables  
-    * Underlying structure is : 
-    * Provides efficient * * method : O()
-    * Collision:  
+    * Underlying structure is : vector
+    * Provides efficient *search * method : O(1)
+    * Collision: when 2 inputs are mapped to same index 
     * The template data structure that uses hash table is : unordered_map
 * Three ways to solve the collision problems  
     * Open Address Hashing : 
+        * Linear Probing : when collision happened at i, visit i + 1, i+2 until an open spot
         * Two problems of this method 
-            *
-            *
+            * delayed insertion : takes time to find empty spot. Take time when searching because keys not at computed index.
+            * cluster
     * Double Hashing :
-        * Require table size to be a * * number
+        * Used a second hash function to compute step when collision happened, reduce cluster
+        * Require table size to be a *prime* number
         * Problems of this method
-            * 
+            * might go out of bound
+            * might not uniformly distributed
     * Chain Hashing (Stdlib implementation) :  
-        * Element need for resizing table  
-* Red-Black Tree
+        * a linked list is stored at each index
+        * Eliminate need for resizing table  
+* Red-Black Tree : perfectly balanced binary tree at all times
+|          | Hash Table |red-black tree|
+| ---------|:----------:|:------------:|
+| search   |O(1)avg/o(n)bad| o(logn)   |
+|delete/insert|O(1)avg/o(n)bad|o(logn) |
+
+* Coding
+    * To use STL unordered map : unordered_map<int,string> students;
+    * To put items into my unordered_map
+        * students[4528133] = "Bella"; this way can overwrite existing data
+        * students.insert(pair<int,string>(4528133,"Bella")); In this way, the pair template has member variable first and second
+    * To search for an item in unordered_map
+        * students.find(4528133) returns an iterator if found, unordered_map::end if not found, take in key as parameter
+        * if (students.find(4528133) != students.end()) { }
+    * To delete an item in unordered_map
+        * By key : students.erase(4528133);
+        * By iterator : unordered_map<int,string>::iterator p = students.find(4528133); students.erase(p);
+    * To iterator through the unordered_map and print elements
+        * for(unordered_map<int,string>::iterator p = students.begin(); p != students.end(); p++){cout<< i->first << i->second;
+        
+        
        
     
 ## Week 2
