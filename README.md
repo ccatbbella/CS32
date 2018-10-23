@@ -89,7 +89,28 @@
                     }
                       
                      
-    * Selection sort
+    * Selection sort  
+        * Find the largest/smallest element in the unsorted array, swap it with a[i] 
+        * Coding: void selectionSort(int arr[], size_t size){  
+                    int temp;  
+                    int largest;  
+                    int largestIndex;  
+                    for(i = size-1;i>o;i--){  
+                      largestIndex = 0;  
+                      largest = arr[largestIndex];  
+                      for(j = 1; j<i;j++){  
+                        if(arr[j] > largest){  
+                          largestIndex = j;  
+                          largest = a[j];  
+                        }  
+                        temp = a[i];  
+                        a[i] = largest;  
+                        a[largestIndex] = temp;  
+                      }  
+                    }
+                        
+                        
+                         
     
 
 
