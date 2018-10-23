@@ -53,6 +53,7 @@
 * coding of recursive binary search
 
 * Quadratic-time sorting algorithm O(n^2), O(nlogn) is considered fast
+    * [handout](http://cs.ucsb.edu/~richert/cs32/misc/h07-handout.pdf)
     * Bubble sort 
         * starting from beginning, compare every adjacent pair and swap if necessary. After each iteration, one element must be at the right place
         * Optimization: one whole pass with no swapping make it stop
