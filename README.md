@@ -149,8 +149,26 @@
 * 2 situations where a destructor is invoked
   * When an object is created inside a function implementation, destructor is called when the function ends executing
   * When _delete_ keyword is used on pointer, the object it points to is deleted
+### STL vector, 10/02/2018/Tue
+* #include<vector>
+    * Vectors are dynamically-resizable
+    * Vectors have a size associated with it. *Arrays do not know their size and the programmer must be aware of it.
+    * Access Element:Unlike [ ], if .at() references an element that the vector doesn’t contain, an exception is thrown
+    * Remove element:
+        * v2.erase(v2.begin() + 2); // Removing 2nd index of the vector  
+        * v2.erase(v2.begin() + 1, v2.begin() + 3);  // Removing 1st and 2nd index - (1,3)
+    * Supported methods
+        * front() – returns the first element
+        * back() – returns the last element
+        * pop_back() – delete the last element 
+        * push_back() - insert  
+    * vector<int> v1(100); // initializes vector with 100 elements.
+    * vector<int> v2(100, 1); //initializes vector with 100 elements = 1
+    * iterators
+        * begin() – returns an iterator that points to the first element
+        * end() – returns an iterator that points to one element passed the last element
   
-### Basic, 09/27/2018/Tue
+### Basic, 09/27/2018/Thur
 * c++ build process
     * Pre-processor: for all #include, copy the appriate code into the cpp file
     * Compiler: translate source code to object code (which is a lower level representation good for executing instructions on specific platform)
@@ -158,6 +176,7 @@
 * Makefile
     * target: dependencies  
                commands
+    * To declare variables: DEPENDENCIES = sth.o
     * To clean: /bin/rm -f *.o ${DEPENDENCIES}
     * To make main: main: ${DEPENDENCIES}  
                   ${CXX} $^ -o $@
