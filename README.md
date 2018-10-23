@@ -8,7 +8,7 @@
     * A good hash function will evenly distribute inputs
 * Hash Tables  
     * Underlying structure is : vector
-    * Provides efficient *search * method : O(1)
+    * Provides efficient *search * method : O(1), also true for insert and delete, o(n) in bad case
     * Collision: when 2 inputs are mapped to same index 
     * The template data structure that uses hash table is : unordered_map
 * Three ways to solve the collision problems  
@@ -26,11 +26,7 @@
     * Chain Hashing (Stdlib implementation) :  
         * a linked list is stored at each index
         * Eliminate need for resizing table  
-* Red-Black Tree : perfectly balanced binary tree at all times
-|          | Hash Table |red-black tree|
-| ---------|:----------:|:------------:|
-| search   |O(1)avg/o(n)bad| o(logn)   |
-|delete/insert|O(1)avg/o(n)bad|o(logn) |
+* Red-Black Tree : perfectly balanced binary tree at all times, o(logn) for search, insert, and delete
 
 * Coding
     * To use STL unordered map : unordered_map<int,string> students;
@@ -47,9 +43,41 @@
         * for(unordered_map<int,string>::iterator p = students.begin(); p != students.end(); p++){cout<< i->first << i->second;
         
         
-       
-    
 ## Week 2
+### Binary Search and Sorting,           10/11/2018/Thur
+* size_t : a data type for integers that has cross-platform compatibility.
+* Binary Search
+    * on a sorted array, if unsorted, bad, o(n)
+    * each iteration cut half of the array
+    * scale well
+* coding of recursive binary search
+
+* Quadratic-time sorting algorithm O(n^2), O(nlogn) is considered fast
+    * Bubble sort 
+        * starting from beginning, compare every adjacent pair and swap if necessary. After each iteration, one element must be at the right place
+        * Optimization: one whole pass with no swapping make it stop
+    * Insertion sort
+    * Selection sort
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ### Struct, Namespace, 10/09/2018
 
 
