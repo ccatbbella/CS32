@@ -56,7 +56,39 @@
     * Bubble sort 
         * starting from beginning, compare every adjacent pair and swap if necessary. After each iteration, one element must be at the right place
         * Optimization: one whole pass with no swapping make it stop
+        * Code: void bubbleSort(int arr[], size_t size){  //increasing order
+                       int temp;  
+                       bool swapped;  
+                       for(int i = size-1; i>0; i--){  
+                         swapped = false
+                         for(int j = 0; j<i; j++){  
+                           if(arr[j+1] < arr[j]){  
+                             temp = a[j];
+                             a[j] = a[j+1];
+                             a[j+1] = temp;
+                             swapped = true
+                           }
+                         }
+                         if(!swapped)  
+                           return;  
+                       }
     * Insertion sort
+        * Initially, the first element is the only one in the sorted array. Iterate through each elements in the unsorted array, find its place in the sorted array, shift elements as necessary to create an open slot, insert the element. Done when all elements in the unsorted array is visited.
+        * O(n) for mostly sorted array
+        * Coding: void insertionSort(int arr[], size_t size){  //sort to increasing order
+                    int itemToBeInserted;
+                    int shiftIndex; //index of item compared with itemToBeInserted and shift right if necessary
+                    for(int i = 1; i<size; i++){  
+                      itemToBeInserted = arr[i];
+                      shiftIndex = i - 1;
+                      while(shiftIndex>=0 && arr[shiftIndex]>itemToBeInserted){  //shift elements as necessary to create an open slot  
+                        arr[shiftIndex+1] = arr[shiftIndex];  
+                        shiftIndex--;
+                      }  
+                      arr[shiftIndex+1] = itemToBeInserted;  
+                    }
+                      
+                     
     * Selection sort
     
 
