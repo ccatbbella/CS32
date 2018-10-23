@@ -112,41 +112,9 @@
                         
                         
                          
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 ### Struct, Namespace, 10/09/2018
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 ## Week 1
@@ -182,3 +150,15 @@
   * When an object is created inside a function implementation, destructor is called when the function ends executing
   * When _delete_ keyword is used on pointer, the object it points to is deleted
   
+### Basic, 09/27/2018/Tue
+* c++ build process
+    * Pre-processor: for all #include, copy the appriate code into the cpp file
+    * Compiler: translate source code to object code (which is a lower level representation good for executing instructions on specific platform)
+    * Linker: link different object codes correctly to produce an executable
+* Makefile
+    * target: dependencies  
+               commands
+    * To clean: /bin/rm -f *.o ${DEPENDENCIES}
+    * To make main: main: ${DEPENDENCIES}  
+                  ${CXX} $^ -o $@
+    * Having .o file so that
