@@ -1,4 +1,7 @@
 # CS32
+## Week 4
+### Merge Sort and Quick Sort           10/25/2018/Thur
+
 ## Week 3 
 ### Hash Tables (unordered_map) and Red-Black Tree (map)       10/16/2018/Tue
 * Hashing : when key values are large, hash them to a smaller index
@@ -41,7 +44,10 @@
         * By iterator : unordered_map<int,string>::iterator p = students.find(4528133); students.erase(p);
     * To iterator through the unordered_map and print elements
         * for(unordered_map<int,string>::iterator p = students.begin(); p != students.end(); p++){cout<< i->first << i->second;
-        
+* Side note: a quick way to compute the mod of a sequence
+of numbers is to use Python's lambda function and map feature
+    * map(lambda x:x%10, perms) [3, 4, 5, 2, 5, 5]
+    * map(lambda x:x%9, perms)  [3, 5, 6, 2, 2, 8]
         
 ## Week 2
 ### Binary Search and Sorting,           10/11/2018/Thur
