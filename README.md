@@ -6,7 +6,7 @@
     * Idea: 
         * break an array into half each time until you have subarray of size = 1
         * Merge two subarrays into one sorted array
-        * Do this from bottom to top
+        * Do this from bottom to top, merge is called after mergesort is called on the left and right subarray
     * Notable details:
         * work on the left side first, after the merging for left side is done, split right side
         * merge: repeatly look at the front value of two arrays and put the smallest into the sorted array. If one list is empty, cost the remaining of the other list into the sorted array
