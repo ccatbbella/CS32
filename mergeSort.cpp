@@ -18,10 +18,16 @@ int* merge(int leftArr[], int rightArr[]){   //smallest to largesr order
     }
   }
   //after the while loop, at least one array is empty
-  while(rightFrontIndex < rightArrSize)
+  while(rightFrontIndex < rightArrSize){
     sortedArray[index] = rightArr[rightFrontIndex];
-  while(leftFrontIndex < leftArrSize)
+    index++;
+    rightFrontIndex++;
+  }
+  while(leftFrontIndex < leftArrSize){
     sortedArray[index] = leftArr[leftFrontIndex];
+    index++;
+    leftFrontIndex++;
+  }
   
   //copy things from sorted Array to the pass
   return sortedArray;
