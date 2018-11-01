@@ -1,4 +1,12 @@
 # CS32
+## Week 5
+### Testing, Inheritance                 10/30/2018/Tue
+* Testing
+    * Complete test infeasible
+    * test normal (expected input), edge/boundry (edge value of possible input), and error cases (invalid input, mostly wrong data type. C++ catch it in compile time, but for Python, need to rigoriously check input data type!)
+    * unit testing: structural your program into different units. Units build on top of each other. When testing, first test the the smaller unit work, then test larger unit until the whole program tested.
+    * Test suite: a pool of tests for automating testing, especially for large scale projects. (eg. lab assignment submission testing)
+    
 ## Week 4
 ### Merge Sort and Quick Sort           10/25/2018/Thur
 * Run in O(nlogn) in the worst case
