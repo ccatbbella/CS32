@@ -13,7 +13,7 @@
     * Run time Analysis:
         * O(nlogn) for best, average, and worst case
         * Require O(n) extra space for the sorted array
-    * [code]()
+    * [code](https://github.com/ccatbbella/CS32/blob/master/mergeSort.cpp)
     
 ## Week 3 
 ### Hash Tables (unordered_map) and Red-Black Tree (map)       10/16/2018/Tue
