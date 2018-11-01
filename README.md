@@ -1,7 +1,20 @@
 # CS32
 ## Week 4
 ### Merge Sort and Quick Sort           10/25/2018/Thur
-
+* Run in O(nlogn) in the worst case
+* Merge Sort
+    * Idea: 
+        * break an array into half each time until you have subarray of size = 1
+        * Merge two subarrays into one sorted array
+        * Do this from bottom to top
+    * Notable details:
+        * work on the left side first, after the merging for left side is done, split right side
+        * merge: repeatly look at the front value of two arrays and put the smallest into the sorted array. If one list is empty, cost the remaining of the other list into the sorted array
+    * Run time Analysis:
+        * O(nlogn) for best, average, and worst case
+        * Require O(n) extra space for the sorted array
+    * [code]()
+    
 ## Week 3 
 ### Hash Tables (unordered_map) and Red-Black Tree (map)       10/16/2018/Tue
 * Hashing : when key values are large, hash them to a smaller index
