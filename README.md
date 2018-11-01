@@ -1,15 +1,39 @@
 # CS32
 ## Week 5
-### Testing, Inheritance                 10/30/2018/Tue
+### Polymorphism and Inheritance         11/01/2018/Thur
+* Inheritance (:)
+    * Public inheritance: public member of base class become public member of children class, protected member of base class become protected member of children class
+    * Protected interitance: public and protected member of the base/parent class become protected member of the children class
+    * Private inheritance: public and protected member of the base class become private member of the children class
+    * How does it look in memory !!! keep in mind when code
+        * person p2 = s1 is legal, student s2 = person p1 is not legal
+        * Putting bigger object into smaller object is ok. All fields are filled. Reversely, some fields can not be filled, and that's not ok.
+        * object slicing: result of person p2 = s1, the studentID part get sliced away
+        * person* p1 = new person("a",10);
+        * student* s2 = p1; non-legal
+        * person* p2 = s1; legal
+        * can't do p2->getStudentID() because of visibility of method, not object slicing
+        * does object slicing happen on heap? No!!!
+    * destructor
+        * delete a student will call both student and person destructor
+        * Look for to_string method in the children before the parent
+* Polymorphism
+    * manuel in C++
+    * virtual keyword
+    * called the method for constructed objects not its actual data type
+    * Can constructor be virtual? No
+    * Can destructor be virtual? yes
+    
+         
+* Talking about Lab
+    * for helper function, define and declare it in cpp file
+### Testing                              10/30/2018/Tue
 * Testing
     * Complete test infeasible
     * test normal (expected input), edge/boundry (edge value of possible input), and error cases (invalid input, mostly wrong data type. C++ catch it in compile time, but for Python, need to rigoriously check input data type!)
     * unit testing: structural your program into different units. Units build on top of each other. When testing, first test the the smaller unit work, then test larger unit until the whole program tested.
     * Test suite: a pool of tests for automating testing, especially for large scale projects. (eg. lab assignment submission testing)
-* Inheritance (:)
-    * Public inheritance: public member of base class become public member of children class, protected member of base class become protected member of children class
-    * Protected interitance: public and protected member of the base/parent class become protected member of the children class
-    * Private inheritance: public and protected member of the base class become private member of the children class
+
 ## Week 4
 ### Merge Sort and Quick Sort           10/25/2018/Thur
 * Run in O(nlogn) in the worst case
