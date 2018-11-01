@@ -17,6 +17,7 @@
     * destructor
         * delete a student will call both student and person destructor
         * Look for to_string method in the children before the parent
+        * cannot instantiate abstract class, can have pointer to it
 * Polymorphism
     * manuel in C++
     * virtual keyword
