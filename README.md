@@ -6,7 +6,10 @@
     * test normal (expected input), edge/boundry (edge value of possible input), and error cases (invalid input, mostly wrong data type. C++ catch it in compile time, but for Python, need to rigoriously check input data type!)
     * unit testing: structural your program into different units. Units build on top of each other. When testing, first test the the smaller unit work, then test larger unit until the whole program tested.
     * Test suite: a pool of tests for automating testing, especially for large scale projects. (eg. lab assignment submission testing)
-    
+* Inheritance (:)
+    * Public inheritance: public member of base class become public member of children class, protected member of base class become protected member of children class
+    * Protected interitance: public and protected member of the base/parent class become protected member of the children class
+    * Private inheritance: public and protected member of the base class become private member of the children class
 ## Week 4
 ### Merge Sort and Quick Sort           10/25/2018/Thur
 * Run in O(nlogn) in the worst case
