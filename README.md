@@ -1,4 +1,21 @@
 # CS32
+## Wekk 6 
+### Exception handling                     11/6/2018/Tue
+* Exception handler: code that deals with/catch an exception (inside the catch block)
+* Basic model for exceptions:
+    * When an error condition occurs, an exception thrown
+    * The code that deals with the error condition is said to catch the exception
+* Catch statements are looked from top to bottom, the one with the right input type will be executed
+* If something is thrown but no corresponding catches for the data type, code crashes.
+* Only one object is thrown at a time
+* Why is it bad to wrap your main function into a try block? You can only catch one error one type. Main can't recover because the layers are too complicated. Catch close to the throw.
+* Why not use if else statement? flexibility and readibility
+* How does vector class throw exception to consumer of the class? [code]()
+* 
+
+
+
+
 ## Week 5
 ### Polymorphism and Inheritance         11/01/2018/Thur
 * Inheritance (:)
