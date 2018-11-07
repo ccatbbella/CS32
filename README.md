@@ -1,15 +1,18 @@
 # CS32
-## Wekk 6 
+## Week 6 
 ### Exception handling                     11/6/2018/Tue
 * Exception handler: code that deals with/catch an exception (inside the catch block)
 * Basic model for exceptions:
     * When an error condition occurs, an exception thrown
     * The code that deals with the error condition is said to catch the exception
+* logic flow: [code](C:\Users\ccatb\Desktop\CS 32\main.cpp)
+   * code within the try block are executes, if nothing thrown, code inside the catch block will not be executed.
+   * If an exception is thrown, corresponding catch code block with the right input data type will be executed. After the catch code done executing, the code within the try block after the line of throwing will not be executed. Instead, execution begins outside the try catch block.
 * Catch statements are looked from top to bottom, the one with the right input type will be executed
 * If something is thrown but no corresponding catches for the data type, code crashes.
 * Only one object is thrown at a time
-* Why is it bad to wrap your main function into a try block? You can only catch one error one type. Main can't recover because the layers are too complicated. Catch close to the throw.
-* Why not use if else statement? flexibility and readibility
+* Why is it bad to wrap your main function into a try block? You can only catch one error one type. Main can't recover because the layers are too complicated. Catch should be close to the throw.
+* Why not use if else statement? flexibility and readibility. catch block are expensize while try block is cheap. If some error tends to happen very often, use if else instead of catch.
 * How does vector class throw exception to consumer of the class? [code]()
 * 
 
