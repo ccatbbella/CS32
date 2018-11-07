@@ -13,7 +13,7 @@
 * Only one object is thrown at a time
 * Why is it bad to wrap your main function into a try block? You can only catch one error one type. Main can't recover because the layers are too complicated. Catch should be close to the throw.
 * Why not use if else statement? flexibility and readibility. catch block are expensize while try block is cheap. If some error tends to happen very often, use if else instead of catch.
-* How does vector class throw exception to consumer of the class? [code]()
+* How does vector class throw exception to consumer of the class? Function will throw exception. But what to put into try and catch block is up to the caller of the function. [code](https://github.com/ccatbbella/CS32/blob/master/exception%20main_2.cpp)
 * 
 
 
