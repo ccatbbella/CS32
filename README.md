@@ -5,7 +5,7 @@
 * Basic model for exceptions:
     * When an error condition occurs, an exception thrown
     * The code that deals with the error condition is said to catch the exception
-* logic flow: [code](C:\Users\ccatb\Desktop\CS 32\main.cpp)
+* logic flow: [code](https://github.com/ccatbbella/CS32/blob/master/exception%20main.cpp)
    * code within the try block are executes, if nothing thrown, code inside the catch block will not be executed.
    * If an exception is thrown, corresponding catch code block with the right input data type will be executed. After the catch code done executing, the code within the try block after the line of throwing will not be executed. Instead, execution begins outside the try catch block.
 * Catch statements are looked from top to bottom, the one with the right input type will be executed
