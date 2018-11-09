@@ -1,5 +1,30 @@
 # CS32
 ## Week 6 
+###                        11/8/2018
+* create the ostream string object, pass this into my dump function, treat this as out, created an expected string, call .str on the stream object and compare it to expected string, can pass ostreamstring to ostream bc ostreamstring is a derived class
+* considered the case where table is empty, do nothing
+* lab02 student to_string
+* Standard library maybe? include librarys in cpp file
+* next Monday lab gdb and debugging
+* The transform method from algorithm library, transform(startedIterator, endIterator, wheretoReplace, howtotransform)
+* the parameter for howtotranform has to match the type iterator points to
+* Passing toupper function as parameter
+   * The function name is a pointer to function
+   * refer to function as memory
+   * pass in reference to a function into another function (callback design pattern), web app, reply from web server, 
+   * cast a function to different type
+* pick up reader for the class! spring class friend?
+* You are treating function as an object SBPRINTer.com UCEN pickup
+* packing like object, during runtime, function are not treated as object
+* Write our own transform, given a vector, pass a function to filter thing out of vector
+*//static cast, safe
+//dynamic cast, pointer, and polymorphism
+//const cast
+//reinterpret cast, take this in memory and cast it to whatever in memory, no type checking
+
+* read cpp.com, visual studio code
+
+
 ### Exception handling                     11/6/2018/Tue
 * Exception handler: code that deals with/catch an exception (inside the catch block)
 * Basic model for exceptions:
