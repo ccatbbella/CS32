@@ -101,6 +101,9 @@
         * Require O(n) extra space for the sorted array
     * [code](https://github.com/ccatbbella/CS32/blob/master/mergeSort.cpp)
     
+* Quicksort
+    * left will point to the first number that is bigger than the pivot
+    * right will point to sth that is smaller than pivot
 ## Week 3 
 ### Hash Tables (unordered_map) and Red-Black Tree (map)       10/16/2018/Tue
 * Hashing : when key values are large, hash them to a smaller index
