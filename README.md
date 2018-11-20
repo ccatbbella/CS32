@@ -1,11 +1,6 @@
 # CS32
 ## Week 6 
-###                        11/8/2018
-* create the ostream string object, pass this into my dump function, treat this as out, created an expected string, call .str on the stream object and compare it to expected string, can pass ostreamstring to ostream bc ostreamstring is a derived class
-* considered the case where table is empty, do nothing
-* lab02 student to_string
-* Standard library maybe? include librarys in cpp file
-* next Monday lab gdb and debugging
+### Function Pointer                       11/8/2018/Thur
 * The transform method from algorithm library, transform(startedIterator, endIterator, wheretoReplace, howtotransform)
 * the parameter for howtotranform has to match the type iterator points to
 * Passing toupper function as parameter
@@ -21,8 +16,6 @@
 //dynamic cast, pointer, and polymorphism
 //const cast
 //reinterpret cast, take this in memory and cast it to whatever in memory, no type checking
-
-* read cpp.com, visual studio code
 
 
 ### Exception handling                     11/6/2018/Tue
