@@ -51,6 +51,7 @@
     * Public inheritance: public member of base class become public member of children class, protected member of base class become protected member of children class
     * Protected interitance: public and protected member of the base/parent class become protected member of the children class
     * Private inheritance: public and protected member of the base class become private member of the children class
+    * COnstructor of base class are accessible by derived class
     * How does it look in memory !!! keep in mind when code
         * person p2 = s1 is legal, student s2 = person p1 is not legal
         * Putting bigger object into smaller object is ok. All fields are filled. Reversely, some fields can not be filled, and that's not ok.
