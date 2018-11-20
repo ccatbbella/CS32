@@ -3,16 +3,26 @@
 ### Function Pointer                       11/8/2018/Thur
 * The transform method from algorithm library, transform(startedIterator, endIterator, wheretoReplace, howtotransform)
 * the parameter for howtotranform has to match the type iterator points to
+* transform(s.begin(), s.end(), s.begin(), ::toupper);
 * Passing toupper function as parameter
    * The function name is a pointer to function
-   * refer to function as memory
-   * pass in reference to a function into another function (callback design pattern), web app, reply from web server, 
+   * think of function as a block of code in a specific memory address
+   * cout << reinterpret_cast<void*>(multiplyBy100) << endl; // prints an address of where the multiplyBy100 exists in memory
+   * pass in reference to a function into another function (callback design pattern), web app, reply from web server
+   * callback: passing an executable segment of code to another segment of code
    * cast a function to different type
-* pick up reader for the class! spring class friend?
-* You are treating function as an object SBPRINTer.com UCEN pickup
+* You are treating function as an object
 * packing like object, during runtime, function are not treated as object
 * Write our own transform, given a vector, pass a function to filter thing out of vector
-*//static cast, safe
+* a function can take a function pointer/name as one of its parameters and use whatever function the function pointer is referring to.
+* Syntax
+    * double (*functionPointer)(int);
+    * functionPointer = multiplyBy100;
+    * (*functionPointer)(10) returns a double. First () is needed because function call has higher precidence than *
+    * To define a function like transform
+        * use parameter bool (* filerFunc) (T,T)
+    
+//static cast, safe
 //dynamic cast, pointer, and polymorphism
 //const cast
 //reinterpret cast, take this in memory and cast it to whatever in memory, no type checking
