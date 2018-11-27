@@ -1,4 +1,24 @@
 # CS32
+## Week 9
+### processes, folks, exact               11/27/2018/Tue
+* ps, process list;
+* ps -l more information about process
+* execute and folking processes
+* ls/pwd is a program in Unix that exist in kernel space
+* ls -l make a copy of itself into running ls program, return control back to parent process
+* exec ls -l did not fork process into its own space, has to restart shell because process terminated and can't go back
+* Bash(terminal) a program for interact with kernal and hardware.
+* s -l bash folk a copy of its original shell, in this copy processs, ls executed, once the copy shell terminated, go back to original shell
+* This is why we can run many command in bash, fundamentally how Unix manage processes
+* why? because of sandboxing: keep the parent process safe
+* folk() make a copy of whatever call it, and return the pid of the child process, from folk() downwards have 2 identical process running
+* when the child process called folk, 0 is returned . when parent called folk, id of child process is called
+* Finish talking about folkit example
+* C++ give nice interface to OS and hardware
+* lets execute a program in child process
+
+
+
 ## Week 6 
 ### Function Pointer                       11/8/2018/Thur
 * The transform method from algorithm library, transform(startedIterator, endIterator, wheretoReplace, howtotransform)
