@@ -16,6 +16,13 @@
 * Finish talking about folkit example
 * C++ give nice interface to OS and hardware
 * lets execute a program in child process
+### Heap                      11/29/2018/Thur
+* heap is a complete binary tree
+* maxheap: value of a node is never less than its children
+* minheap: value of a node is never greater than its children
+* a node's parent index (index/2 with integer division)
+* a node's left child (2*index)
+* a node's right child (2 * index + 1)
 
 
 
