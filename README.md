@@ -5,7 +5,7 @@
 * #include <mutex>  short for mutual exclusion lock object
 * block this segment of code from being executed at the same time as me, prevent half-way executing
 * semi-fork
-  
+* deadlock: no one unlock unless get the resource is waiting for  
 
 ## Week 9
 ### processes, folks, exact               11/27/2018/Tue
