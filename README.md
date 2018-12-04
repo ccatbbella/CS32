@@ -1,4 +1,12 @@
-# CS32
+
+* #include <unistd.h>, #include <thread>
+* race condition of two threads, a place in memory being shared by 2 threads
+* total balance read is not good
+* #include <mutex>  short for mutual exclusion lock object
+* block this segment of code from being executed at the same time as me, prevent half-way executing
+* semi-fork
+  
+
 ## Week 9
 ### processes, folks, exact               11/27/2018/Tue
 * ps, process list;
